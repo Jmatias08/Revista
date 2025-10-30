@@ -1,0 +1,595 @@
+/* ========================================
+   RESET Y CONFIGURACIÓN GENERAL
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+/* ========================================
+   CONTENEDOR PRINCIPAL
+   ======================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+.header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-subtitle {
+    font-size: 1.3em;
+    opacity: 0.95;
+}
+
+/* ========================================
+   NAVEGACIÓN POR PESTAÑAS
+   ======================================== */
+.nav-tabs {
+    background: #f5f5f5;
+    border-bottom: 3px solid #ddd;
+    display: flex;
+    overflow-x: auto;
+}
+
+.tab-button {
+    flex: 1;
+    min-width: 200px;
+    padding: 18px 25px;
+    background: #f5f5f5;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 4px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tab-button:hover:not(.disabled) {
+    background: white;
+    color: #2a5298;
+}
+
+.tab-button.active {
+    background: white;
+    color: #2a5298;
+    border-bottom: 4px solid #2a5298;
+}
+
+.tab-button.disabled {
+    background: #e0e0e0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.tab-icon {
+    font-size: 1.2em;
+}
+
+/* ========================================
+   CONTENIDO
+   ======================================== */
+.content {
+    padding: 50px 40px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   SECCIONES
+   ======================================== */
+.section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    color: #2a5298;
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+}
+
+/* ========================================
+   TEXTO DE INTRODUCCIÓN
+   ======================================== */
+.intro-text {
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.9;
+}
+
+.intro-text p {
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   INFOGRAFÍA DEL IDH
+   ======================================== */
+.infografia {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    padding: 40px;
+    border-radius: 15px;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.infografia-title {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.dimensiones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.dimension-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dimension-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dimension-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.dimension-title {
+    color: #1e3c72;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.dimension-subtitle {
+    font-weight: bold;
+    color: #2a5298;
+    margin-bottom: 10px;
+}
+
+.dimension-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ========================================
+   SABÍAS QUE
+   ======================================== */
+.sabias-que {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sabias-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.sabias-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sabias-list li {
+    padding: 12px 0 12px 30px;
+    position: relative;
+    font-size: 1.05em;
+    margin-bottom: 10px;
+}
+
+.sabias-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+/* ========================================
+   TABLA COMPARATIVA
+   ======================================== */
+.table-container {
+    overflow-x: auto;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.comparison-table th {
+    color: white;
+    padding: 18px;
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.comparison-table td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #eee;
+}
+
+.comparison-table tr:hover {
+    background: #f8f9fa;
+}
+
+.highlighted-row {
+    background: #fff3cd !important;
+    font-weight: 600;
+}
+
+/* ========================================
+   CAJA DE ANÁLISIS
+   ======================================== */
+.analysis-box {
+    background: #e3f2fd;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 25px 0;
+    border-left: 4px solid #2196F3;
+}
+
+.analysis-title {
+    color: #1e3c72;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.analysis-box p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.analysis-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* ========================================
+   GRÁFICO DE BARRAS
+   ======================================== */
+.chart-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+    color: #1e3c72;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+
+.bar-chart {
+    margin-top: 20px;
+}
+
+.bar-item {
+    margin-bottom: 20px;
+}
+
+.bar-label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.bar-fill {
+    height: 40px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bar-fill:hover {
+    transform: scaleX(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bar-fill.special {
+    background: linear-gradient(90deg, #f5576c 0%, #f093fb 100%);
+}
+
+/* ========================================
+   TESTIMONIO
+   ======================================== */
+.testimonio {
+    background: #fff8e1;
+    padding: 30px;
+    border-left: 5px solid #ffd54f;
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio-text {
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.testimonio-author {
+    text-align: right;
+    font-weight: bold;
+    color: #666;
+    font-style: normal;
+}
+
+/* ========================================
+   REFLEXIÓN PERSONAL
+   ======================================== */
+.reflexion {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    padding: 35px;
+    border-radius: 15px;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.reflexion-title {
+    color: #1e3c72;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.reflexion-pregunta {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.pregunta-title {
+    color: #1e3c72;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.pregunta-considera {
+    line-height: 1.7;
+    color: #555;
+}
+
+.aspectos-list {
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+.aspectos-list li {
+    margin: 10px 0;
+    line-height: 1.7;
+}
+
+.reflexion-nota {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.reflexion-nota p {
+    line-height: 1.7;
+}
+
+/* ========================================
+   REFERENCIAS
+   ======================================== */
+.referencias {
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.referencias-title {
+    color: #1e3c72;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.referencias-list {
+    padding-left: 25px;
+}
+
+.referencias-list li {
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+/* ========================================
+   SECCIÓN PRÓXIMAMENTE
+   ======================================== */
+.proximamente {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.proximamente-icon {
+    font-size: 8em;
+    margin-bottom: 30px;
+}
+
+.proximamente-title {
+    font-size: 2.5em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.proximamente-text {
+    font-size: 1.3em;
+    color: #777;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .header {
+        padding: 40px 20px;
+    }
+    
+    .header-title {
+        font-size: 2em;
+    }
+    
+    .header-subtitle {
+        font-size: 1.1em;
+    }
+    
+    .content {
+        padding: 30px 20px;
+    }
+    
+    .section-title {
+        font-size: 1.8em;
+    }
+    
+    .tab-button {
+        min-width: 150px;
+        padding: 15px 10px;
+        font-size: 0.9em;
+    }
+    
+    .tab-text {
+        font-size: 0.85em;
+    }
+    
+    .dimensiones-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .infografia {
+        padding: 25px;
+    }
+    
+    .sabias-que {
+        padding: 20px;
+    }
+    
+    .comparison-table {
+        font-size: 0.9em;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 10px;
+    }
+    
+    .chart-container {
+        padding: 20px;
+    }
+    
+    .proximamente {
+        padding: 60px 20px;
+    }
+    
+    .proximamente-icon {
+        font-size: 5em;
+    }
+    
+    .proximamente-title {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 1.5em;
+    }
+    
+    .header-subtitle {
+        font-size: 1em;
+    }
+    
+    .section-title {
+        font-size: 1.5em;
+    }
+    
+    .intro-text {
+        font-size: 1em;
+        text-align: left;
+    }
+}
