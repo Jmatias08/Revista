@@ -11,7 +11,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7;
     color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0085c3 0%, #ffffff 100%);
     padding: 20px;
 }
 
@@ -215,8 +215,8 @@ body {
    SABÍAS QUE
    ======================================== */
 .sabias-que {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    color: white;
+    background: linear-gradient(135deg, #bbe3ee 0%, #bbe3ee 100%);
+    color: rgb(0, 0, 0);
     padding: 30px;
     border-radius: 15px;
     margin: 30px 0;
@@ -264,7 +264,7 @@ body {
 }
 
 .comparison-table thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #6ebaf0 0%, #6ebaf0 100%);
 }
 
 .comparison-table th {
@@ -283,7 +283,7 @@ body {
 
 
 .highlighted-row {
-    background: #fff3cd !important;
+    background: #7dfcc7 !important;
     font-weight: 600;
 }
 
@@ -296,6 +296,10 @@ body {
     border-radius: 10px;
     margin: 25px 0;
     border-left: 4px solid #2196F3;
+}
+
+.parrafo {
+    text-align: justify;
 }
 
 .analysis-title {
@@ -345,7 +349,7 @@ body {
 
 .bar-fill {
     height: 40px;
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(90deg, #3b3d47 0%, #3b3d47 100%);
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -362,7 +366,7 @@ body {
 }
 
 .bar-fill.special {
-    background: linear-gradient(90deg, #f5576c 0%, #f093fb 100%);
+    background: linear-gradient(90deg, #3b3d47 0%, #3b3d47 100%);
 }
 
 /* ========================================
@@ -371,7 +375,7 @@ body {
 .testimonio {
     background: #fff8e1;
     padding: 30px;
-    border-left: 5px solid #ffd54f;
+    border-left: 5px solid #2196F3;
     border-radius: 10px;
     margin: 30px 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -395,7 +399,7 @@ body {
    REFLEXIÓN PERSONAL
    ======================================== */
 .reflexion {
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    background: linear-gradient(135deg, #a8edea 0%, #cef9f6 100%);
     padding: 35px;
     border-radius: 15px;
     margin: 30px 0;
@@ -424,7 +428,8 @@ body {
 
 .pregunta-considera {
     line-height: 1.7;
-    color: #555;
+    text-align: justify;
+    color: #000000;
 }
 
 .aspectos-list {
@@ -434,6 +439,7 @@ body {
 
 .aspectos-list li {
     margin: 10px 0;
+    text-align: justify;
     line-height: 1.7;
 }
 
