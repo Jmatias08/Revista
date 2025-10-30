@@ -280,9 +280,7 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-.comparison-table tr:hover {
-    background: #f8f9fa;
-}
+
 
 .highlighted-row {
     background: #fff3cd !important;
