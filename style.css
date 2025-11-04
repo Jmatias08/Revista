@@ -480,79 +480,79 @@ body {
     line-height: 1.6;
 }
 
- /* ========================================
+/* ========================================
    Rural - urbana
    ======================================== */
 
-    .escuelas-comparacion {
-        background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-        padding: 30px;
-        border-radius: 15px;
-        margin: 30px 0;
-        box-shadow: 0 5px 20px rgba(59, 130, 246, 0.1);
-    }
+.escuelas-comparacion {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.1);
+}
 
-    .comparacion-title {
-        color: #1e40af;
-        margin-bottom: 20px;
-        text-align: center;
-        font-size: 1.5em;
-    }
+.comparacion-title {
+    color: #1e40af;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
 
-    .escuelas-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 25px;
-        margin-top: 25px;
-    }
+.escuelas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
 
-    .escuela-card {
-        background: white;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-    }
+.escuela-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
 
-    .escuela-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    }
+.escuela-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
 
-    .escuela-titulo {
-        margin-bottom: 15px;
-        font-size: 1.3em;
-    }
+.escuela-titulo {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
 
-    .escuela-rural .escuela-titulo {
-        color: #dc2626;
-    }
+.escuela-rural .escuela-titulo {
+    color: #dc2626;
+}
 
-    .escuela-urbana .escuela-titulo {
-        color: #059669;
-    }
+.escuela-urbana .escuela-titulo {
+    color: #059669;
+}
 
-    .escuela-contenido {
-        margin-top: 15px;
-    }
+.escuela-contenido {
+    margin-top: 15px;
+}
 
-    .escuela-subtitle {
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: #1e40af;
-    }
+.escuela-subtitle {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1e40af;
+}
 
-    .escuela-lista {
-        margin-left: 20px;
-        line-height: 1.8;
-    }
+.escuela-lista {
+    margin-left: 20px;
+    line-height: 1.8;
+}
 
-    .escuela-lista li {
-        margin: 8px 0;
-        color: #475569;
-    }
+.escuela-lista li {
+    margin: 8px 0;
+    color: #475569;
+}
 
-    /* Iniciativas del Ministerio */
+/* Iniciativas del Ministerio */
 .mineduc-iniciativas {
     margin: 30px 0;
 }
@@ -603,6 +603,7 @@ body {
     line-height: 1.7;
     color: #475569;
 }
+
 /* ========================================
    SECCIÓN PRÓXIMAMENTE
    ======================================== */
