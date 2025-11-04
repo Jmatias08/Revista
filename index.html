@@ -513,27 +513,36 @@
     </div>
 
     <script>
-        function showTab(tabId) {
-            // Ocultar todos los contenidos
+        function showTab(tabId, url = null) {
             const contents = document.querySelectorAll('.tab-content');
-            contents.forEach(content => {
-                content.classList.remove('active');
-            });
+            contents.forEach(content => content.classList.remove('active'));
 
-            // Remover clase active de todos los botones
             const buttons = document.querySelectorAll('.tab-button');
-            buttons.forEach(button => {
-                button.classList.remove('active');
-            });
+            buttons.forEach(button => button.classList.remove('active'));
 
-            // Mostrar el contenido seleccionado
-            document.getElementById(tabId).classList.add('active');
+            const tab = document.getElementById(tabId);
+            tab.classList.add('active');
 
-            // Activar el botón correspondiente
             event.target.closest('.tab-button').classList.add('active');
 
-            // Scroll suave al inicio del contenido
             window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // 🔥 Cargar HTML externo solo una vez
+            if (url && !tab.dataset.loaded) {
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) throw new Error("Error HTTP " + response.status);
+                        return response.text();
+                    })
+                    .then(data => {
+                        tab.innerHTML = data;
+                        tab.dataset.loaded = true;
+                    })
+                    .catch(err => {
+                        tab.innerHTML = `<p style="color:red;">Error al cargar ${url}: ${err.message}</p>`;
+                        console.error(err);
+                    });
+            }
         }
     </script>
 </body>
