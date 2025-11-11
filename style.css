@@ -803,11 +803,11 @@ body {
 }
 
 .barra-femenino {
-    background: linear-gradient(90deg, #ec4899 0%, #db2777 100%);
+    background: linear-gradient(90deg, #48c6ec 0%, #48c6ec 100%);
 }
 
 .barra-promedio {
-    background: linear-gradient(90deg, #8b5cf6 0%, #7c3aed 100%);
+    background: linear-gradient(90deg, #a5f5ee 0%, #a5f5ee 100%);
 }
 
 /* Barras Verticales - Mortalidad Materna */
