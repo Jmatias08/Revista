@@ -1111,3 +1111,387 @@ body {
         height: 150px !important;
     }
 }
+
+/* ========================================
+   ESTILOS PARA SECCIÓN INGRESOS Y TRABAJO
+   Tonalidad: Azules (coherencia visual)
+   ======================================== */
+
+/* Explicación de Pobreza */
+.pobreza-explicacion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.pobreza-card {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid #3b82f6;
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.15);
+}
+
+.pobreza-subtitulo {
+    color: #1e40af;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.pobreza-card p {
+    line-height: 1.8;
+    color: #334155;
+    margin-bottom: 15px;
+}
+
+.pobreza-detalles {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.pobreza-detalles h4 {
+    color: #1e40af;
+    margin: 15px 0 10px 0;
+    font-size: 1.1em;
+}
+
+.pobreza-detalles ul {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.pobreza-detalles li {
+    margin: 10px 0;
+    color: #475569;
+}
+
+/* Situación Actual - Grid de Tarjetas */
+.situacion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.situacion-card {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 25px;
+    border-radius: 15px;
+    border: 3px solid #3b82f6;
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2);
+    transition: all 0.3s ease;
+}
+
+.situacion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+}
+
+.situacion-card.alerta {
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+    border-color: #f59e0b;
+}
+
+.situacion-card.critica {
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+    border-color: #dc2626;
+}
+
+.situacion-icon {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.situacion-titulo {
+    color: #1e40af;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.situacion-dato-grande {
+    font-size: 3em;
+    font-weight: bold;
+    color: #1e40af;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.situacion-card.alerta .situacion-dato-grande {
+    color: #d97706;
+}
+
+.situacion-card.critica .situacion-dato-grande {
+    color: #dc2626;
+}
+
+.situacion-descripcion {
+    text-align: center;
+    color: #475569;
+    font-size: 1.05em;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.situacion-desglose {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    list-style: none;
+}
+
+.situacion-desglose li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e7eb;
+    color: #475569;
+}
+
+.situacion-desglose li:last-child {
+    border-bottom: none;
+}
+
+.situacion-fuente {
+    font-size: 0.85em;
+    color: #64748b;
+    font-style: italic;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Reflexión Económica */
+.reflexion-economica {
+    margin: 30px 0;
+}
+
+.reflexion-intro {
+    font-size: 1.1em;
+    line-height: 1.9;
+    color: #334155;
+    margin-bottom: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: 12px;
+    border-left: 5px solid #3b82f6;
+}
+
+.razon-card {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 3px 10px rgba(59, 130, 246, 0.1);
+    transition: all 0.3s ease;
+}
+
+.razon-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.2);
+}
+
+.razon-titulo {
+    color: #1e40af;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.razon-card p {
+    line-height: 1.8;
+    color: #334155;
+}
+
+/* Mapa de Pobreza por Departamento */
+.mapa-pobreza-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.departamento-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.departamento-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dept-nombre {
+    min-width: 150px;
+    font-weight: 600;
+    color: #1e40af;
+}
+
+.dept-barra {
+    height: 35px;
+    background: linear-gradient(90deg, #dc2626 0%, #ef4444 100%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 12px;
+    color: white;
+    font-weight: bold;
+    transition: width 1s ease;
+}
+
+.departamento-item.critico .dept-barra {
+    background: linear-gradient(90deg, #dc2626 0%, #b91c1c 100%);
+}
+
+.departamento-item.alerta .dept-barra {
+    background: linear-gradient(90deg, #f59e0b 0%, #d97706 100%);
+}
+
+.departamento-item.medio .dept-barra {
+    background: linear-gradient(90deg, #eab308 0%, #ca8a04 100%);
+}
+
+.departamento-item.bajo .dept-barra {
+    background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+}
+
+/* Brecha de Género */
+.genero-comparacion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.genero-seccion {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.genero-subtitulo {
+    color: #1e40af;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.genero-barras {
+    margin: 20px 0;
+}
+
+.genero-item {
+    margin-bottom: 20px;
+}
+
+.genero-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.genero-barra-fondo {
+    background: #e5e7eb;
+    height: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.genero-barra {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 12px;
+    color: white;
+    font-weight: bold;
+    transition: width 1s ease;
+}
+
+.genero-barra.hombre {
+    background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.genero-barra.mujer {
+    background: linear-gradient(90deg, #ec4899 0%, #db2777 100%);
+}
+
+.genero-barra.hombre-informal {
+    background: linear-gradient(90deg, #6366f1 0%, #4f46e5 100%);
+}
+
+.genero-barra.mujer-informal {
+    background: linear-gradient(90deg, #f43f5e 0%, #e11d48 100%);
+}
+
+.genero-brecha {
+    margin-top: 15px;
+    padding: 12px;
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+    border-radius: 8px;
+    text-align: center;
+    color: #991b1b;
+    border: 2px solid #fecaca;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pobreza-explicacion {
+        grid-template-columns: 1fr;
+    }
+    
+    .situacion-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .genero-comparacion {
+        grid-template-columns: 1fr;
+    }
+    
+    .dept-nombre {
+        min-width: 100px;
+        font-size: 0.9em;
+    }
+    
+    .dept-barra {
+        height: 30px;
+        font-size: 0.9em;
+    }
+    
+    .razon-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pobreza-card {
+        padding: 20px;
+    }
+    
+    .situacion-card {
+        padding: 20px;
+    }
+    
+    .situacion-dato-grande {
+        font-size: 2.5em;
+    }
+    
+    .genero-seccion {
+        padding: 20px;
+    }
+    
+    .dept-nombre {
+        min-width: 80px;
+        font-size: 0.85em;
+    }
+}
