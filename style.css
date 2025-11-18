@@ -1495,3 +1495,535 @@ body {
         font-size: 0.85em;
     }
 }
+
+/* ========================================
+   ESTILOS PARA SECCIÓN MIGRACIÓN
+   Tonalidad: Azules (coherencia visual)
+   ======================================== */
+
+/* Causas de Migración */
+.causas-migracion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.causa-card {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #3b82f6;
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.15);
+    transition: all 0.3s ease;
+}
+
+.causa-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
+}
+
+.causa-icon {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.causa-titulo {
+    color: #1e40af;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.causa-descripcion {
+    line-height: 1.8;
+    color: #334155;
+}
+
+/* Estadísticas de Migración */
+.migracion-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    border: 3px solid #3b82f6;
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.15);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
+}
+
+.stat-card.genero-masculino {
+    border-color: #3b82f6;
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+.stat-card.genero-femenino {
+    border-color: #ec4899;
+    background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+}
+
+.stat-card.alerta-nna {
+    border-color: #f59e0b;
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.stat-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.stat-valor {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #1e40af;
+    margin: 10px 0;
+}
+
+.stat-card.genero-femenino .stat-valor {
+    color: #be185d;
+}
+
+.stat-card.alerta-nna .stat-valor {
+    color: #d97706;
+}
+
+.stat-label {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #475569;
+    margin: 10px 0;
+}
+
+.stat-detalle {
+    font-size: 0.9em;
+    color: #64748b;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Retorno al Hogar - Reflexión */
+.retorno-reflexion {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.15);
+}
+
+.retorno-subtitulo {
+    color: #1e40af;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.retorno-imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.imagen-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-card h4 {
+    color: #1e40af;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.imagen-card.positiva {
+    border-left: 5px solid #10b981;
+}
+
+.imagen-card.negativa {
+    border-left: 5px solid #dc2626;
+}
+
+.imagen-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.imagen-card.positiva li {
+    padding: 10px 0 10px 30px;
+    position: relative;
+    line-height: 1.6;
+    color: #334155;
+}
+
+.imagen-card.positiva li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.imagen-card.negativa li {
+    padding: 10px 0 10px 30px;
+    position: relative;
+    line-height: 1.6;
+    color: #334155;
+}
+
+.imagen-card.negativa li:before {
+    content: "✗";
+    position: absolute;
+    left: 0;
+    color: #dc2626;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/* Dificultades del Retorno */
+.dificultades-retorno {
+    margin: 40px 0;
+}
+
+.dificultad-item {
+    display: flex;
+    gap: 20px;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 5px solid #3b82f6;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.1);
+    transition: all 0.3s ease;
+}
+
+.dificultad-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.2);
+}
+
+.dificultad-numero {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.dificultad-contenido h4 {
+    color: #1e40af;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.dificultad-contenido p {
+    line-height: 1.8;
+    color: #334155;
+}
+
+/* Plan Retorno al Hogar */
+.plan-retorno-explicacion {
+    margin: 30px 0;
+}
+
+.plan-intro {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #3b82f6;
+    margin-bottom: 30px;
+}
+
+.plan-intro p {
+    line-height: 1.8;
+    color: #334155;
+}
+
+.plan-fases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.fase-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #3b82f6;
+    transition: all 0.3s ease;
+}
+
+.fase-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.fase-numero {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.fase-titulo {
+    color: #1e40af;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.fase-descripcion {
+    line-height: 1.8;
+    color: #475569;
+}
+
+/* Análisis del Plan */
+.plan-analisis {
+    margin: 40px 0;
+}
+
+.analisis-plan-titulo {
+    color: #1e40af;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.perspectiva-card {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.15);
+}
+
+.perspectiva-card.economica {
+    border-left: 5px solid #10b981;
+}
+
+.perspectiva-card.social {
+    border-left: 5px solid #8b5cf6;
+}
+
+.perspectiva-titulo {
+    color: #1e40af;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.fortalezas-debilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.fortaleza-box {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #10b981;
+}
+
+.fortaleza-box h5 {
+    color: #065f46;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.fortaleza-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fortaleza-box li {
+    padding: 8px 0 8px 25px;
+    position: relative;
+    line-height: 1.6;
+    color: #064e3b;
+}
+
+.fortaleza-box li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+.debilidad-box {
+    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #dc2626;
+}
+
+.debilidad-box h5 {
+    color: #991b1b;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.debilidad-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.debilidad-box li {
+    padding: 8px 0 8px 25px;
+    position: relative;
+    line-height: 1.6;
+    color: #7f1d1d;
+}
+
+.debilidad-box li:before {
+    content: "⚠";
+    position: absolute;
+    left: 0;
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.perspectiva-conclusion {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-left: 4px solid #3b82f6;
+    line-height: 1.8;
+    color: #334155;
+}
+
+/* Impactos Sociales */
+.impactos-sociales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.impacto-item {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.impacto-item.positivo {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    border-left: 4px solid #10b981;
+}
+
+.impacto-item.negativo {
+    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+    border-left: 4px solid #dc2626;
+}
+
+.impacto-item h5 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.impacto-item.positivo h5 {
+    color: #065f46;
+}
+
+.impacto-item.negativo h5 {
+    color: #991b1b;
+}
+
+.impacto-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.impacto-item li {
+    padding: 8px 0;
+    line-height: 1.7;
+}
+
+.impacto-item.positivo li {
+    color: #064e3b;
+}
+
+.impacto-item.negativo li {
+    color: #7f1d1d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .causas-migracion {
+        grid-template-columns: 1fr;
+    }
+    
+    .migracion-stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .retorno-imagenes {
+        grid-template-columns: 1fr;
+    }
+    
+    .plan-fases {
+        grid-template-columns: 1fr;
+    }
+    
+    .fortalezas-debilidades {
+        grid-template-columns: 1fr;
+    }
+    
+    .impactos-sociales {
+        grid-template-columns: 1fr;
+    }
+    
+    .dificultad-item {
+        flex-direction: column;
+    }
+    
+    .dificultad-numero {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .causa-card {
+        padding: 20px;
+    }
+    
+    .stat-card {
+        padding: 20px;
+    }
+    
+    .stat-valor {
+        font-size: 2em;
+    }
+    
+    .fase-card {
+        padding: 20px;
+    }
+    
+    .perspectiva-card {
+        padding: 20px;
+    }
+}
