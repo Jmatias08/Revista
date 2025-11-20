@@ -2066,23 +2066,23 @@ body {
 }
 
 .tema-header.desarrollo {
-    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, #0085c3 0%, #0085c3 100%);
 }
 
 .tema-header.educacion {
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    background: linear-gradient(135deg, #0085c3 0%, #0085c3 100%);
 }
 
 .tema-header.salud {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #0085c3 0%, #0085c3 100%);
 }
 
 .tema-header.trabajo {
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #0085c3 0%, #0085c3 100%);
 }
 
 .tema-header.migracion {
-    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    background: linear-gradient(135deg, #0085c3 0%, #0085c3 100%);
 }
 
 .tema-icon {
